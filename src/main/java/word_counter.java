@@ -1,29 +1,19 @@
-import java.lang.Math;
-
-public class Calculator_functions {
-    //Calculator methods
-    public int multiply(int a,int b){
-        return (a*b);
-    }
-    public double sqrt(double a){
-        return Math.sqrt(a);
-    }
-
-    public double cubeRoot(double a)
-    {
-        return Math.cbrt(a);
-    }
-
-    public int division(int a, int b)
-    {
-       return (a/b);
-    }
-    public double division(double a, double b)
-    {
-        return (a/b);
-    }
-    public double multiply(double a,double b)
-    {
-        return (a*b);
-    }
-}
+public class word_counter{  
+    static int wordcnt(String string)  
+      {  
+        int count=0;  
+    
+          char ch[]= new char[string.length()];     
+          for(int i=0;i<string.length();i++)  
+          {  
+              ch[i]= string.charAt(i);  
+              if( ((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ')) || ((ch[0]!=' ')&&(i==0)) )  
+                  count++;  
+          }  
+          return count;  
+      }  
+    public static void main(String[] args) {  
+        String string ="This is the first sentence of words";  
+       System.out.println(wordcnt(string) + " words.");   
+  }  
+}  
