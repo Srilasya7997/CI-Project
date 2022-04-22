@@ -45,6 +45,7 @@ public class string_functions{
 
       static int gen_random_number()  
       {  
+         // it will generate random number
          return (int) (20 * Math.random());
       }
 
