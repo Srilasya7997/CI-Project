@@ -29,6 +29,7 @@ public class string_functions{
     
       static String gen_random_string(String string,int length)  
       {  
+        // This function will generate a random string from the input string given and length provided
         StringBuilder str_build = new StringBuilder();
         Random random = new Random();
     
