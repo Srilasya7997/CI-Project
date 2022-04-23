@@ -12,7 +12,7 @@ public class string_functionsTest {
     @Test
     public void test_wordcount()
     {
-        assertEquals(4,str_funs.wordcnt("This is the string"));
+        assertEquals(3,str_funs.wordcnt("This is the string"));
     }
 
     public void test_no_of_occr_word()
@@ -22,19 +22,19 @@ public class string_functionsTest {
 
     public void test_gen_random_string()
     {
-        assertTrue(!str_funs.gen_random_string().isEmpty());
+        assertTrue(!string_functions.gen_random_string(null, 0).isEmpty());
     }
 
     public void test_gen_random_number()
     {
-        assertTrue(400 < str_funs.gen_random_number());
+        assertTrue(400 < string_functions.gen_random_number());
     }
     
     //  Integration  testing
     @Test
     public void test_integration1()
     {
-        assertEquals(1,str_funs.wordcnt(str_funs.gen_random_string("ThisString",str_funs.gen_random_number())));
+        assertEquals(1,str_funs.wordcnt(string_functions.gen_random_string("ThisString",string_functions.gen_random_number())));
     }
 
 }

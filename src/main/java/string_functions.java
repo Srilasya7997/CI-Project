@@ -2,7 +2,7 @@ import java.util.Random;
 import java.lang.Math;  
 
 public class string_functions{  
-    static int wordcnt(String string)  
+    public int wordcnt(String string)  
       {  
         int count=0;  
     
@@ -16,7 +16,7 @@ public class string_functions{
           return count;  
       }  
 
-      static int no_of_occr_word(String string,String word)
+      public int no_of_occr_word(String string,String word)
       {
           String buff[] = string.split(" ");
           int count = 0;
@@ -49,13 +49,4 @@ public class string_functions{
          // it will generate random number
          return (int) (20 * Math.random());
       }
-
-    public static void main(String[] args) {  
-        String string ="This is full sentence and in this sentence this is assertEqualsthe first sentence of words";  
-        String word="sentence";
-       System.out.println(wordcnt(string) + " words.");   
-       System.out.println(no_of_occr_word(string,word) + " words.");  
-       System.out.println(gen_random_string(string,15)) ;
-       System.out.println(gen_random_number());
-  }  
-}  
+}
