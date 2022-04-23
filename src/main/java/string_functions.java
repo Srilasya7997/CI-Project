@@ -49,4 +49,10 @@ public class string_functions{
          // it will generate random number
          return (int) (20 * Math.random());
       }
+
+      public static void main(String[] args) {  
+        String string ="This is full sentence and in this sentence this is assertEqualsthe first sentence of words";  
+       System.out.println(gen_random_string(string,15)) ;
+       System.out.println(gen_random_number());
+  }  
 }
