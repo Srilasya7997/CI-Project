@@ -40,6 +40,7 @@ public class string_functions{
         }
     
         String randomString = str_build.toString();
+        // return randomString
         return randomString;
       }
 
