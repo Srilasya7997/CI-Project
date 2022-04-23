@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.lang.Math;  
-
+// this code is by Lasya
 public class string_functions{  
     public int wordcnt(String string)  
       {  
