@@ -12,13 +12,13 @@ public class string_functionsTest {
     @Test
     public void test_wordcount()
     {
-        assertEquals(4,str_funs.wordcnt("This is the string"));
+        assertEquals(3,str_funs.wordcnt("This is the string"));
     }
 
     @Test
-    public void test_no_of_occr_word()
+    public void test_no_of_occr2_word()
     {
-        assertEquals(4,str_funs.no_of_occr_word("This is red apple in a red bucket","red"));
+        assertEquals(1,str_funs.no_of_occr_word("This is red apple in a red bucket","red"));
     }
 
     @Test
