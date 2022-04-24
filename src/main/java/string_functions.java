@@ -2,6 +2,7 @@ import java.util.Random;
 import java.lang.Math;  
 // this code is by Lasya project
 public class string_functions{  
+  // This function is to count words in an input string
     public int wordcnt(String string)  
       {  
         int count=0;  
