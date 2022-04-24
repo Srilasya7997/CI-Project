@@ -12,7 +12,7 @@ public class string_functionsTest {
     @Test
     public void test_wordcount()
     {
-        assertEquals(3,str_funs.wordcnt("This is the string"));
+        assertEquals(4,str_funs.wordcnt("This is the string"));
     }
 
     @Test
@@ -24,13 +24,13 @@ public class string_functionsTest {
     @Test
     public void test_gen_random_string()
     {
-        assertTrue(!string_functions.gen_random_string(null, 0).isEmpty());
+        assertTrue(string_functions.gen_random_string(null, 0).isEmpty());
     }
 
     @Test
     public void test_gen_random_number()
     {
-        assertTrue(400 < string_functions.gen_random_number());
+        assertTrue(400 > string_functions.gen_random_number());
     }
     
     //  Integration  testing
