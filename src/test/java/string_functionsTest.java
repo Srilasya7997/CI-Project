@@ -18,7 +18,7 @@ public class string_functionsTest {
     @Test
     public void test_no_of_occr_word()
     {
-        assertEquals(3,str_funs.no_of_occr_word("This is red apple in a red bucket","red"));
+        assertEquals(4,str_funs.no_of_occr_word("This is red apple in a red bucket","red"));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class string_functionsTest {
     @Test
     public void test_gen_random_number()
     {
-        assertTrue(400 < string_functions.gen_random_number());
+        assertTrue(400 > string_functions.gen_random_number());
     }
     
     //  Integration  testing
